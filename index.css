@@ -127,7 +127,6 @@ body{
 }
 
 .right button:hover{
-    /* border:3px solid #7C3AED; */
     color: #7C3AED;
     font-weight: bolder;
     font-size: 14px;
@@ -175,7 +174,13 @@ font-family: sans-serif;
 }
 .s3 p{
     font-size: 19px;
+    transition: 3s;
+    cursor: pointer;
 }
+.s3 p:hover{
+scale: 1.1;
+}
+
 .s4 button{
     height: 40px;
     border-radius: 25px;
@@ -184,6 +189,7 @@ font-family: sans-serif;
 .s4 button:hover{
     border: 3px solid #7C3AED;
     color: #7C3AED;
+    
 }
 .s4{
     margin-top: 100px;
@@ -215,7 +221,7 @@ font-size: 25px;
     padding-left: 10%;
 }
 .foot a{
-    color: #F8FAFC;
+    color: #7C3AED;
 }
 .foot{
     /* width: 70%; */
@@ -247,7 +253,7 @@ font-size: 25px;
 }
 span{
     display: flex;
-    /* padding: 20px 100%; */
+    padding-top: 15px;
     font-weight: bolder;
     float: right;
     font-size: 30px;
@@ -277,27 +283,23 @@ span{
         text-align: center;
         border-radius: 20px;
         width: 100%;
-        height: 280px;
+        height: 200px;
         top: 70px;
         cursor: pointer;
         right: -100%;
         position: fixed;
+        background-color: rgba(255, 255, 255, 0.593);
         transition: 1s ;
     }
-    .sidebar li{
+    .sidebar button{
         width: 100%;
-        height: 60px;
-        margin-top: 35px;
+        height: 33%;
+        font-size: 15px;
+        background-color: transparent;
+        border: none;
     }
-    .sidebar a{
-        
-        /* height: 100px; */
-        width: 100%;
-      height: 100%;
-        text-decoration: none;
-
-    }
-    .sidebar li:hover{
+    .sidebar button:hover{
+        background-color: #1E293B;
         color: #7C3AED;
         font-size: 20px;
     }
